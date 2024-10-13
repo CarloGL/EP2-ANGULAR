@@ -1,0 +1,12 @@
+<div class="quienes-somos-container">
+    <h2>Quienes Somos</h2>
+    <p>{{ descripcion }}</p>
+    <h3>Misión</h3>
+    <p>{{ mision }}</p>
+    <h3>Visión</h3>
+    <p>{{ vision }}</p>
+    <h3>Valores</h3>
+    <ul>
+      <li *ngFor="let valor of valores">{{ valor }}</li>
+    </ul>
+  </div>

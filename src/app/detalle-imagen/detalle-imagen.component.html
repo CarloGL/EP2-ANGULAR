@@ -1,0 +1,12 @@
+<div class="detalle-imagen-container">
+  <div class="imagen-detalle" *ngIf="imagen">
+    <h2>{{ imagen.titulo }}</h2>
+    <div class="imagen-wrapper">
+      <img [src]="imagen.url" [alt]="imagen.titulo">
+    </div>
+    <div class="imagen-info">
+      <p>{{ imagen.descripcion }}</p>
+    </div>
+    <a routerLink="/galeria" class="btn-volver">Volver a la galería</a>
+  </div>
+</div>

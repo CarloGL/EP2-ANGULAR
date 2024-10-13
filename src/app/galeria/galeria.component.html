@@ -1,0 +1,12 @@
+<div class="galeria-container">
+  <h2>Nuestra Galería</h2>
+  <div class="galeria">
+    <div *ngFor="let imagen of imagenes" class="imagen-item">
+      <img [src]="imagen.url" [alt]="imagen.titulo">
+      <div class="imagen-info">
+        <h3>{{ imagen.titulo }}</h3>
+        <a [routerLink]="['/detalle-imagen', imagen.id]">Ver detalle</a>
+      </div>
+    </div>
+  </div>
+</div>
