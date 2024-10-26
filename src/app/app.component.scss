@@ -1,0 +1,47 @@
+nav {
+    background-color: #000000;
+    position: fixed; // Fijamos el header
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; // Aseguramos que esté sobre todo
+    padding: 30px 0;
+    transition: all 0.3s ease;
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      li {
+        margin: 0 15px;
+  
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-family: 'Bebas Neue', sans-serif;
+          font-weight: 500;
+          transition: color 0.3s ease;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+  
+          &:hover {
+            color: #ffd700;
+          }
+        }
+      }
+    }
+  }
+  
+  // Clase adicional para cuando el header esté sobre contenido oscuro
+  .nav-transparent {
+    background-color: transparent;
+    
+    &.scrolled {
+      background-color: #333;
+    }
+  }

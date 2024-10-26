@@ -8,6 +8,7 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { DetalleImagenComponent } from './detalle-imagen/detalle-imagen.component';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DetalleImagenComponent } from './detalle-imagen/detalle-imagen.componen
     QuienesSomosComponent,
     ContactosComponent,
     GaleriaComponent,
-    DetalleImagenComponent
+    DetalleImagenComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { DetalleImagenComponent } from './detalle-imagen/detalle-imagen.component';
+import { ShopComponent } from './shop/shop.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'contactos', component: ContactosComponent },
   { path: 'galeria', component: GaleriaComponent },
   { path: 'detalle-imagen/:id', component: DetalleImagenComponent },
+  { path: 'shop', component: ShopComponent },
   { path: '**', redirectTo: '' }
 ];
 
