@@ -1,10 +1,50 @@
 <div class="home-container">
-  <h1>{{ nombreNegocio }}</h1>
-  <p class="descripcion">{{ descripcion }}</p>
-  <p class="slogan">{{ slogan }}</p>
-  <div class="mision-container">
-    <h2>Nuestra Misión</h2>
-    <p>{{ mision }}</p>
+  <!-- Video Banner (mantiene igual) -->
+  <div class="video-banner">
+    <iframe
+      src="https://player.vimeo.com/video/1023092642?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+      frameborder="0"
+      allow="autoplay; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
-  <a href="#" class="cta-button">Descubre Nuestros Servicios</a>
+
+  <!-- Primera sección de dos cajas -->
+  <div class="dual-section">
+    <div class="box-container left-box">
+      <div class="content">
+        <h2>DESIGNERS​​</h2>
+        <button class="cta-button" (click)="onLeftButtonClick()">
+          LEARN MORE
+        </button>
+      </div>
+    </div>
+    <div class="box-container right-box">
+      <div class="content">
+        <h2>PARTNERS​</h2>
+        <button class="cta-button" (click)="onRightButtonClick()">
+          LEARN MORE
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dual-section">
+    <div class="box-container bottom-left-box">
+      <div class="content">
+        <h2>BUY TICKETS​</h2>
+        <button class="cta-button" (click)="onBottomLeftButtonClick()">
+          RESERVE TODAY
+        </button>
+      </div>
+    </div>
+    <div class="box-container bottom-right-box">
+      <div class="content">
+        <h2>SHOP MERCH​</h2>
+        <button class="cta-button" (click)="onBottomRightButtonClick()">
+          SHOP NOW
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

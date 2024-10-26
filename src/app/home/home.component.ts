@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,37 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  nombreNegocio = 'InnovaTech';
-  descripcion = 'Transformamos lo desechado en tesoros, dando una segunda vida a objetos y reduciendo el impacto ambiental.';
-  slogan = 'Renovando el presente, preservando el futuro';
-  mision = 'En EInnovaTech, nos dedicamos a disminuir la cantidad de objetos desechados prematuramente. Creemos firmemente que muchos artículos considerados "inútiles" tienen el potencial de ser valiosos para otras personas. Nuestra misión es crear un puente entre aquellos que desean deshacerse de objetos y quienes pueden darles un nuevo propósito. A través de nuestro trabajo, no solo ayudamos a reducir el desperdicio, sino que también fomentamos una mentalidad de consumo más consciente y sostenible en nuestra comunidad.';
+  nombreNegocio = 'Runway 7';
+  
+  // Contenido para las cajas superiores
+  leftBoxTitle = 'Nueva Colección';
+  leftBoxButtonText = 'Explorar';
+  
+  rightBoxTitle = 'Edición Limitada';
+  rightBoxButtonText = 'Descubrir';
+
+  // Contenido para las nuevas cajas inferiores
+  bottomLeftBoxTitle = 'Accesorios';
+  bottomLeftBoxButtonText = 'Ver Más';
+
+  bottomRightBoxTitle = 'Colaboraciones';
+  bottomRightBoxButtonText = 'Explorar';
+
+  constructor(private router: Router) {}
+
+  onLeftButtonClick() {
+    this.router.navigate(['https://runway7fashion.com/nyfw-designers/']);
+  }
+
+  onRightButtonClick() {
+    this.router.navigate(['https://runway7fashion.com/sponsors/']);
+  }
+
+  onBottomLeftButtonClick() {
+    this.router.navigate(['https://runway7fashion.com/nyfw-tickets-types/']);
+  }
+
+  onBottomRightButtonClick() {
+    this.router.navigate(['https://runway7fashion.com/shop-nyfw2025/']);
+  }
 }
